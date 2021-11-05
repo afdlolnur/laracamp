@@ -10,6 +10,6 @@ class CampBenefit extends Model
     use HasFactory;
 
     //define field2 apa yang bisa diisi
-    protected $fillable = ['name'];
+    protected $fillable = ['camp_id', 'name'];
 
 }

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes; //tambahan untuk mengaktifkan fitur softDeletes
 
-class Camps extends Model
+class Camp extends Model
 {
     use HasFactory, SoftDeletes;
 
