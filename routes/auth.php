@@ -20,11 +20,11 @@ Route::post('/register', [RegisteredUserController::class, 'store'])
 
 
 
-//ini diedit dgunakan untuk login admin
+//ini diedit dgunakan untuk login user biasa
 Route::get('/login', [UserController::class, 'login'] )->middleware('guest')->name('login');
 
 
-//digunakan untuk login user biasa
+//digunakan untuk login user admin
 Route::get('/login/admin', [AuthenticatedSessionController::class, 'create'])
                 ->middleware('guest')
                 ->name('login.admin');
