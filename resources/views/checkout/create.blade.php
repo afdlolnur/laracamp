@@ -33,6 +33,7 @@
                             @csrf
                                 <div class="mb-4">
                                     <label class="form-label">Full Name</label>
+                                    <input name="name" type="text" class="form-control {{$errors->has('name') ? 'is-invalid' : ''}}" value="{{Auth::user()->name}}"/>
                                     @if ($errors->has('name'))
                                         <p class="text-danger">{{$errors->first('name')}}</p>
                                     @endif
