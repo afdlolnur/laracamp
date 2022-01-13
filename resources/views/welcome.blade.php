@@ -318,7 +318,7 @@
             </div>
             <div class="row pb-70">
                 <div class="col-lg-12 col-12 text-center">
-                    <img src="{{asset('images/brands.png')}}" height="30" alt="">
+                    <img src="{{ asset('images/merek.png') }}" height="30" alt="">
                 </div>
             </div>
         </div>
